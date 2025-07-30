@@ -2328,7 +2328,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-docs@npm:9.0.18":
+"@storybook/addon-docs@npm:9":
   version: 9.0.18
   resolution: "@storybook/addon-docs@npm:9.0.18"
   dependencies:
@@ -2841,12 +2841,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tybys/wasm-util@npm:^0.10.0, @tybys/wasm-util@npm:^0.9.0":
+"@tybys/wasm-util@npm:^0.10.0":
   version: 0.10.0
   resolution: "@tybys/wasm-util@npm:0.10.0"
   dependencies:
     tslib: "npm:^2.4.0"
   checksum: 10c0/044feba55c1e2af703aa4946139969badb183ce1a659a75ed60bc195a90e73a3f3fc53bcd643497c9954597763ddb051fec62f80962b2ca6fc716ba897dc696e
+  languageName: node
+  linkType: hard
+
+"@tybys/wasm-util@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "@tybys/wasm-util@npm:0.9.0"
+  dependencies:
+    tslib: "npm:^2.4.0"
+  checksum: 10c0/f9fde5c554455019f33af6c8215f1a1435028803dc2a2825b077d812bed4209a1a64444a4ca0ce2ea7e1175c8d88e2f9173a36a33c199e8a5c671aa31de8242d
   languageName: node
   linkType: hard
 
@@ -3992,7 +4001,7 @@ __metadata:
     "@chromatic-com/storybook": "npm:4.0.1"
     "@eslint/eslintrc": "npm:^3"
     "@storybook/addon-a11y": "npm:9.0.18"
-    "@storybook/addon-docs": "npm:9.0.18"
+    "@storybook/addon-docs": "npm:9"
     "@storybook/addon-onboarding": "npm:^9.0.18"
     "@storybook/addon-vitest": "npm:9.0.18"
     "@storybook/nextjs": "npm:^9.0.18"
