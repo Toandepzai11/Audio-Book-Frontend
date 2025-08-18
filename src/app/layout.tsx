@@ -4,6 +4,8 @@ import type { Metadata } from 'next';
 import { Inter, JetBrains_Mono, IBM_Plex_Serif } from 'next/font/google';
 import { cn } from '@/lib/utils';
 
+import NavBar from '@/components/NavBar';
+
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin', 'vietnamese'],
@@ -35,6 +37,7 @@ export default function RootLayout(
       }
     >
       <body className={cn('font-sans', 'antialiased')}>
+        <NavBar />
         {children}
       </body>
     </html>
