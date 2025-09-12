@@ -1,6 +1,7 @@
 export interface Book {
   title: string;
   slug: string;
+  image?: string;
 }
 
 export interface Category {
@@ -8,18 +9,73 @@ export interface Category {
   books: Book[];
 }
 
-export const Book: Book[] = [
-  { title: "Pride and Prejudice", slug: "/books/pride-and-prejudice" },
+export const BookList: Book[] = [
   { title: "1984", slug: "/books/1984" },
-  { title: "The Great Gatsby", slug: "/books/the-great-gatsby" },
-  { title: "Pride and Prejudice", slug: "/books/pride-and-prejudice" },
-  { title: "1984", slug: "/books/1984" },
-  { title: "The Great Gatsby", slug: "/books/the-great-gatsby" },
-  { title: "Pride and Prejudice", slug: "/books/pride-and-prejudice" },
-  { title: "1984", slug: "/books/1984" },
-  { title: "The Great Gatsby", slug: "/books/the-great-gatsby" },
-  { title: "1984", slug: "/books/1984" },
-  { title: "The Great Gatsby", slug: "/books/the-great-gatsby" },
+  {
+    title: "Guns, Germs, and Steel",
+    slug: "/books/guns-germs-steel",
+    image: "https://picsum.photos/200/300",
+  },
+  {
+    title: "Leaves of Grass",
+    slug: "/books/leaves-of-grass",
+    image: "https://picsum.photos/200/300",
+  },
+  {
+    title: "Pride and Prejudice",
+    slug: "/books/pride-and-prejudice",
+    image: "https://picsum.photos/200/300",
+  },
+  {
+    title: "Sapiens",
+    slug: "/books/sapiens",
+    image: "https://picsum.photos/200/300",
+  },
+  {
+    title: "The Great Gatsby",
+    slug: "/books/the-great-gatsby",
+    image: "https://picsum.photos/200/300",
+  },
+  {
+    title: "The Waste Land",
+    slug: "/books/the-waste-land",
+    image: "https://picsum.photos/200/300",
+  },
+  {
+    title: "1984",
+    slug: "/books/1984",
+    image: "https://picsum.photos/200/300",
+  },
+  {
+    title: "Guns, Germs, and Steel",
+    slug: "/books/guns-germs-steel",
+    image: "https://picsum.photos/200/300",
+  },
+  {
+    title: "Leaves of Grass",
+    slug: "/books/leaves-of-grass",
+    image: "https://picsum.photos/200/300",
+  },
+  {
+    title: "Pride and Prejudice",
+    slug: "/books/pride-and-prejudice",
+    image: "https://picsum.photos/200/300",
+  },
+  {
+    title: "Sapiens",
+    slug: "/books/sapiens",
+    image: "https://picsum.photos/200/300",
+  },
+  {
+    title: "The Great Gatsby",
+    slug: "/books/the-great-gatsby",
+    image: "https://picsum.photos/200/300",
+  },
+  {
+    title: "The Waste Land",
+    slug: "/books/the-waste-land",
+    image: "https://picsum.photos/200/300",
+  },
 ];
 
 export const categories: Category[] = [

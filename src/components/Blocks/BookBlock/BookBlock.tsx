@@ -3,7 +3,7 @@
 import Title from "@/components/Title/Title";
 import BookCard from "@/components/Cards/BookCard";
 import { useState } from "react";
-import { Book } from "./Books";
+import { BookList } from "./Books";
 import Button from "@/components/Button";
 
 function BookBlock() {
@@ -17,14 +17,20 @@ function BookBlock() {
     <div>
       <Title title="Most Read Books" className="text-3xl mb-6" />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {Book.slice(0, visibleBooks).map((book, idx) => (
-          <BookCard key={idx} title={book.title} href={book.slug} />
+        {BookList.slice(0, visibleBooks).map((book, idx) => (
+          <BookCard
+            key={idx}
+            image={book.image ?? "https://picsum.photos/500/300"}
+            title={book.title}
+            href={book.slug}
+            content="asdf"
+          />
         ))}
       </div>
 
-      {visibleBooks < Book.length && (
+      {visibleBooks < BookList.length && (
         <div className="flex justify-center py-10">
-          <button onClick={loadMoreBooks}> 
+          <button onClick={loadMoreBooks}>
             <Button content="Load More" href="#" />
           </button>
         </div>
