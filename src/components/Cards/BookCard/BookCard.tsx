@@ -21,12 +21,12 @@ function BookCard({ title, content, image, href, className }: BookCardProps) {
   return (
     <div
       className={cn(
-        "max-w-[22rem] rounded-[2rem] border border-gray-200 bg-white",
+        "max-w-[22rem] rounded-b-[2rem] rounded-t-[10px] border border-gray-200 bg-white",
         className
       )}
     >
       <div
-        className="relative h-60 w-full overflow-hidden rounded-t-[2rem] hover:rounded-br-[2rem] duration-300"
+        className="relative h-60 w-full overflow-hidden rounded-t-[10px] hover:rounded-br-[2rem] duration-300"
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
@@ -50,7 +50,7 @@ function BookCard({ title, content, image, href, className }: BookCardProps) {
         <Link href={href}>
           <Title
             title={title}
-            className="text-lg font-bold italic hover:text-blue-600 transition-colors duration-300"
+            className="text-lg font-serif font-semibold italic hover:text-blue-600 transition-colors duration-300"
           />
         </Link>
         <p className="text-gray-600 font-serif">{content}</p>
