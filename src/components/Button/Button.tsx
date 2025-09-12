@@ -17,7 +17,7 @@ function Button({ content, href, className = "" }: ButtonProps) {
       )}
     >
       <span className="inline-flex rounded-full bg-black py-2 px-5 group-active:bg-transparent">
-        <span className="font-serif font-extrabold bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent group-hover:text-white">
+        <span className="font-extrabold bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent group-hover:text-white duration-100">
           {content}
         </span>
       </span>
